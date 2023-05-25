@@ -7,7 +7,7 @@ const Progress = ({value}:Props) => {
     
 <div className="bg-white w-60 md:w-80 py-8 px-4 rounded-lg">
 <div className="flex justify-between mb-1">
-  <span className="text-base font-medium text-blue-700">Flowbite</span>
+  <span className="text-base font-medium text-blue-700">loading...</span>
   <span className="text-sm font-medium text-blue-700">{value}%</span>
 </div>
 <div className="w-full bg-gray-200 rounded-full h-2.5">
