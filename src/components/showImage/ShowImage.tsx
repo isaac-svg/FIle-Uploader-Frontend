@@ -5,7 +5,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 const ShowImage = ():ReactElement => {
   const [data,setData] = useState<string>("")
   useEffect(()=>{
-    axios.get(`${process.env.BASE_URL!}/upload`).then(res=>{
+    axios.get(`https://file-uploader-api.vercel.app/upload`).then(res=>{
       const {0:{imageURL}} = res.data
       setData(imageURL)
       console.log(imageURL)

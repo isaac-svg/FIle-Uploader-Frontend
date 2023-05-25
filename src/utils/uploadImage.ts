@@ -5,7 +5,7 @@ import axios from "axios"
 
 const uploadImage = (base64String:string,setIsLoading:React.Dispatch<React.SetStateAction<boolean>>,setUpLoaded:React.Dispatch<React.SetStateAction<boolean>>,setValue:React.Dispatch<React.SetStateAction<number>>) => {
     
-    axios.post(`${process.env.BASE_URL!}/upload`,{image:base64String},{
+    axios.post(`https://file-uploader-api.vercel.app/upload`,{image:base64String},{
        onUploadProgress(progress) {
 
 
