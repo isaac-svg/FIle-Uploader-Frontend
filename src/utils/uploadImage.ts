@@ -5,7 +5,7 @@ import axios from "axios"
 
 const uploadImage = (base64String:string,setIsLoading:React.Dispatch<React.SetStateAction<boolean>>,setUpLoaded:React.Dispatch<React.SetStateAction<boolean>>,setValue:React.Dispatch<React.SetStateAction<number>>) => {
     
-    axios.post("http://localhost:3000/upload",{image:base64String},{
+    axios.post(`${process.env.BASE_URL!}/upload`,{image:base64String},{
        onUploadProgress(progress) {
 
 
