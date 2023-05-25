@@ -22,7 +22,7 @@ const uploadImage = (base64String:string,setIsLoading:React.Dispatch<React.SetSt
             setUpLoaded(true)},2500)
         }
        },
-    }).then(res=>{()=>{}}).catch(err=>console.log(err.message))
+    }).then(res=>{console.log(res)}).catch(err=>console.log(err.message))
 }
 
 export default uploadImage
